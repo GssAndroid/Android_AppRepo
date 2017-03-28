@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="fill_parent" android:paddingBottom="10px" android:paddingTop="10px" android:paddingLeft="10px" android:paddingRight="10px">
+	<TextView 
+		android:layout_marginTop="5px" 
+		android:focusable="false" 
+		android:id="@+id/name" 
+		style="@style/appText"
+		android:textSize="18dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:layout_width="wrap_content">
+	</TextView>	
+</LinearLayout>

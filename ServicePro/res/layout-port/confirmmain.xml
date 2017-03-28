@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_margin="2dip"
+		android:id="@+id/confirm_header_linear"
+		android:background="@layout/border_black"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<ScrollView 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="70dip" android:fadeScrollbars="false" android:fadingEdge="none">
+			<LinearLayout 
+				android:orientation="vertical"
+				android:background="@color/darkbluecolor"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="5dip">
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+					<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" 
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEORD_CNFSCR_LBL_CUST"/>
+					<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/customerTV" style="@style/appText" 
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+				</LinearLayout>  
+				
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+					<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" 
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEORD_CNFSCR_LBL_DUEDAT"/>
+					<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/duedateTV" style="@style/appText" 
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+				</LinearLayout>  
+				
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appLabel" 
+						android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEORD_CNFSCR_LBL_SO"/>
+					<TextView  
+						android:layout_height="wrap_content" 
+						android:id="@+id/serviceordTV" style="@style/appText" 
+						android:layout_width="wrap_content" android:layout_gravity="left" />
+				</LinearLayout>  
+			</LinearLayout> 
+		</ScrollView>
+	</LinearLayout>
+
+	<HorizontalScrollView 
+	    android:id="@+id/HorizontalScrollView21" 
+        android:layout_width="wrap_content"         
+        android:layout_height="wrap_content" android:layout_weight="1">
+		<LinearLayout 
+		    android:layout_width="match_parent"
+			android:orientation="vertical" 
+			android:layout_weight="1"
+			android:layout_height="match_parent"> 
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" 
+		  		android:id="@+id/confirmationTL"
+				android:layout_below="@+id/confirm_header_linear"  >
+				<TableRow style="@style/HeaderRow">
+		      		 <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV1"
+			            android:text="  "
+			            android:textStyle="bold"
+			            android:gravity="left"
+			            android:editable="false"
+			            android:clickable="true"
+			            android:layout_width = "50dp"
+			         />
+			         <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV2"
+			            android:text="@string/SERVICEORD_CNFSCR_LBL_ITEM"
+			            android:textStyle="bold"
+			            android:gravity="left"
+			            android:editable="false"
+			            android:clickable="true"
+			            android:layout_width = "80dp"
+			         />
+			        <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV3"
+			            android:text="@string/SERVICEORD_CNFSCR_LBL_MDL"
+			            android:textStyle="bold"
+			            android:gravity="left"
+			            android:editable="false"
+			            android:clickable="false"
+			            android:layout_width = "170dip"
+			         />         
+			        <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV4"
+			            android:text="@string/SERVICEORD_CNFSCR_LBL_ITEMDET"
+			            android:textStyle="bold"
+			            android:gravity="left"
+			            android:editable="false"
+			            android:clickable="false"
+			            android:layout_width = "150dip"
+			          />
+			         <TextView
+			         	style="@style/HeaderText"
+			       		android:id="@+id/TableHeaderTV5"
+			            android:text="@string/SERVICEORD_CNFSCR_LBL_SRL"
+			            android:textStyle="bold"
+			            android:gravity="left"
+			            android:editable="false"
+			            android:clickable="true"
+			            android:layout_width = "120dip"
+			         />  
+			    </TableRow>
+			</TableLayout>  
+			<ScrollView android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TableLayout android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:id="@+id/actymaintbllayout1">
+				</TableLayout>
+			</ScrollView>
+		</LinearLayout>
+	</HorizontalScrollView>
+
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/mainbtnlayout3"
+	    android:layout_below="@+id/HorizontalScrollView01"
+	    android:paddingTop="10dp" android:paddingBottom="10dp"
+	    android:gravity="center_horizontal">	
+	    
+		<Button
+		android:id="@+id/addConfirmBtn"
+		android:layout_width="wrap_content"  android:background="@drawable/btn_blue1" style="@style/mainBtn"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:text="@string/SERVICEORD_CNFSCR_ADDNEW"/>
+	</LinearLayout>  
+</LinearLayout>

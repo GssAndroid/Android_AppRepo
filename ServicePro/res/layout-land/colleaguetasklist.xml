@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:orientation="vertical"
+	android:layout_height="fill_parent">
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_margin="2dip"
+		android:id="@+id/colleague_header_linear"
+		android:background="@layout/border_black"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<ScrollView 
+			android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="50dip" android:fadeScrollbars="false" android:fadingEdge="none">
+			<LinearLayout 
+				android:orientation="vertical"
+				android:background="@color/darkbluecolor"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="5dip" android:paddingLeft="5dp">
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_gravity="center_vertical">
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appLabel"
+						android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_COLLEAGUE_NAME_LBL"/>
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appText"
+						android:id="@+id/colleagueNameTV" android:layout_marginLeft="10dip"
+						android:layout_width="wrap_content" android:layout_gravity="left" />
+				</LinearLayout>  				
+				<LinearLayout 
+					android:orientation="horizontal" android:id="@+id/collTelNo1LL"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_gravity="center_vertical">
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appLabel"
+						android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_COLLEAGUE_TEL_NO1_LBL"/>
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appText"
+						android:id="@+id/collTelNo1TV" android:layout_marginLeft="10dip"
+						android:layout_width="wrap_content" android:layout_gravity="left" />
+					<ImageButton 
+						android:id="@+id/collcall1btn"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" android:visibility="gone"
+				        android:background="@drawable/ph_icon" android:layout_gravity="center_vertical|right" android:layout_marginLeft="10dip"/>
+				</LinearLayout>  				
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:id="@+id/collTelNo2LL"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginBottom="5dip" android:layout_gravity="center_vertical">
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appLabel"
+						android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_COLLEAGUE_TEL_NO2_LBL"/>
+					<TextView  
+						android:layout_height="wrap_content" style="@style/appText"
+						android:id="@+id/collTelNo2TV" android:layout_marginLeft="10dip"
+						android:layout_width="wrap_content" android:layout_gravity="left" />
+					<ImageButton 
+						android:id="@+id/collcall2btn"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" android:visibility="gone"
+				        android:background="@drawable/ph_icon" android:layout_gravity="center_vertical|right" android:layout_marginLeft="10dip"/>
+				</LinearLayout>  
+			</LinearLayout> 
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dip"
+		android:id="@+id/tasklinear" >	     
+		<TextView    
+			style="@style/appLabel" 
+			android:editable="false"
+			android:padding="5dip"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/searchLbl" android:text="@string/SERVICEPRO_FIND_LBL">
+		</TextView>		
+		<EditText 
+		    android:inputType="textCapSentences"
+			style="@style/findEditSmallScreenStyle"
+			android:id="@+id/searchBEF">
+		</EditText>
+	</LinearLayout>
+	<LinearLayout 
+    	android:id="@+id/showrelativeLT"
+    	android:orientation="vertical"	   
+		android:layout_width="fill_parent" android:layout_height="fill_parent" >	
+	    <ListView 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"		
+			android:drawSelectorOnTop="false" 
+		    android:layout_weight="1"
+			android:id="@android:id/list" 
+			android:layout_marginTop="2px" >
+		</ListView>   
+	</LinearLayout>
+</LinearLayout>

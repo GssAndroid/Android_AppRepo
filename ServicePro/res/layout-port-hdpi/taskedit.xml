@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bgcolor"
+	android:layout_height="wrap_content" android:layout_width="wrap_content">
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/part1" >
+	<LinearLayout 
+		android:orientation="vertical"
+		android:id="@+id/error_header_linear"
+		android:visibility="gone"
+		android:background="@layout/border_red"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<ScrollView 
+		    android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="35dip" android:fadeScrollbars="false" android:fadingEdge="none">
+			<LinearLayout 
+				android:orientation="vertical"
+				android:background="@color/black"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="5dip">								
+				<LinearLayout 
+					android:orientation="horizontal"
+					android:background="@color/white"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" >
+					<TextView  
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/errorTitle" 
+						android:text="Message from last sync:"
+						style="@style/appLabel">
+					</TextView>
+					<TextView  
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/errorLbl" 
+						style="@style/appText">
+					</TextView>
+				</LinearLayout> 
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none">
+		<RelativeLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"			
+			android:layout_height="wrap_content" > 		    
+			<!-- <EditText  
+			    style="@style/appText" 
+				android:padding="5dip"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:minHeight="50dip"
+				android:editable="false" android:enabled="false"
+				android:id="@+id/summaryET" android:background="@color/light_gray">
+			</EditText>	 -->
+			<LinearLayout 
+				android:orientation="vertical"
+				android:layout_margin="2dip"
+				android:layout_below="@+id/error_header_linear"
+				android:id="@+id/summary_header_linear"
+				android:background="@layout/border_black"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">				
+				<LinearLayout 
+					android:orientation="vertical"
+					android:background="@color/darkbluecolor"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<LinearLayout 
+						android:orientation="vertical"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+						android:layout_marginBottom="5dip" android:layout_marginLeft="5dip">
+						<LinearLayout 
+							android:orientation="vertical"
+							android:background="@color/darkbluecolor"
+							android:layout_marginRight="4dp"
+							android:padding="3dp"
+							android:layout_width="fill_parent" android:layout_height="wrap_content">
+							<TextView  
+								style="@style/appLabel"
+								android:layout_height="wrap_content"
+								android:layout_width="fill_parent"
+								android:text="Service Location"
+								android:id="@+id/summaryTitle" >
+							</TextView>
+							<LinearLayout
+								android:orientation="horizontal"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content" >	
+								<TextView  
+									android:editable="false" style="@style/appText"
+									android:layout_height="wrap_content"
+									android:layout_width="wrap_content"
+									android:layout_weight="1"
+									android:minHeight="50dip"
+									android:id="@+id/summaryTV" >
+								</TextView>
+								<ImageView 
+									android:id="@+id/ddviewimg"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginRight="15dip"
+									android:layout_marginLeft="15dip"
+									android:visibility="gone"
+									android:background="@drawable/dd"/>
+							</LinearLayout> 
+						</LinearLayout> 
+					</LinearLayout>  
+				</LinearLayout> 
+			</LinearLayout>			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="2dip"	
+				android:layout_below="@+id/summary_header_linear"
+				android:id="@+id/catglinear" >				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/catgLbl" android:layout_weight="1"
+					android:text="@string/SERVICEPRO_TSKEDIT_TRID">
+				</TextView>				
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/idTV" >
+				</TextView>
+				<!-- android:textSize="15dp"
+				<EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/catgET" 
+					android:width="150dip"
+					android:editable="false" android:enabled="false"
+					>
+				</EditText> -->
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="2dip"	 android:visibility="gone"
+				android:layout_below="@+id/catglinear"
+				android:id="@+id/serordtyplinear" >				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/serOrdTypeLbl" android:layout_weight="1"
+					android:text="@string/SERVICEPRO_TSKEDIT_SERORDTYP">
+				</TextView>				
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/serOrdTypeTV" >
+				</TextView>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/serordtyplinear"
+				android:id="@+id/prioritylinear" >				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/priorityLbl" android:layout_weight="1"
+					android:text="@string/SERVICEPRO_TSKEDIT_PRI">
+				</TextView>				
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/priorityVal" >
+				</TextView>				
+				<!-- <Spinner 
+					android:id="@+id/prioritySpn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:editable="false"
+					android:drawSelectorOnTop="true" android:clickable="false" android:focusable="false" /> -->
+			</LinearLayout>						
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/prioritylinear"
+				android:id="@+id/statuslinear" >				     
+				<TextView 
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/statusLbl" android:layout_weight="1"
+					android:text="@string/SERVICEPRO_TSKEDIT_STATUS">
+				</TextView>				
+				<Spinner 
+					android:id="@+id/statusSpn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true" />
+			</LinearLayout>		
+			
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/reasonLL"
+				android:layout_below="@+id/statuslinear" android:visibility="visible">
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:padding="5dip"	
+					android:id="@+id/rejectlinear" >					     
+					<TextView  
+				    	style="@style/appLabel"
+						android:editable="false"
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="150dp"  android:layout_weight="1"
+						android:id="@+id/rejectLbl" 
+						android:text="@string/SERVICEPRO_TSKEDIT_SLREA">
+					</TextView>					
+					<Spinner 
+						android:id="@+id/rejectSpn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:drawSelectorOnTop="true" />
+				</LinearLayout>					
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:padding="5dip"	
+					android:layout_below="@+id/rejectlinear"
+					android:id="@+id/rejectreslinear" >					     
+					<TextView  
+				   		style="@style/appLabel"
+						android:editable="false"
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="150dp" android:layout_weight="1"
+						android:id="@+id/rejectresLbl" 
+						android:text="@string/SERVICEPRO_TSKEDIT_ETRREA">
+					</TextView>					
+					<EditText  
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:minHeight="80dip"
+						android:id="@+id/rejectresET" 
+						android:width="150dip"
+						android:enabled="false">
+					</EditText>
+				</LinearLayout>
+			</RelativeLayout>	
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/duelinear"
+				android:id="@+id/fieldnoteslinear">	
+	
+				<EditText  
+				    	android:id="@+id/fieldnotesET" 
+						android:padding="5dip"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:minHeight="80dip"						
+						android:hint ="@string/SERVICEPRO_FIELDNOTES"/>			
+			   </LinearLayout> 		
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/reasonLL"
+				android:id="@+id/duelinear" >				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/dueLbl" 
+					android:layout_weight="1" android:text="@string/SERVICEPRO_TSKEDIT_STARTON">
+				</TextView>				
+				<TextView   
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:textColor="@color/black"
+					android:layout_width="wrap_content"
+					android:id="@+id/dateTV" >
+				</TextView>				
+				<TextView  
+					android:padding="5dip"
+					android:visibility="gone"
+					android:textColor="@color/black"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/timeTV" >
+				</TextView>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:visibility="gone"
+				android:layout_below="@+id/fieldnoteslinear"
+				android:id="@+id/etalinear" >				     
+				<TextView  
+					style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/etaLbl" 
+					android:layout_weight="1" android:text="@string/SERVICEPRO_TSKEDIT_ETA_DATE_LBL">
+				</TextView>				
+				<TextView  					
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/black"
+					android:id="@+id/etaDateTV" >
+				</TextView>				
+				<TextView  
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textColor="@color/black"
+					android:id="@+id/etaTimeTV" >
+				</TextView>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/etalinear"
+				android:id="@+id/tzonelinear" >				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/tzoneLbl" 
+					android:text="@string/SERVICEORD_ACTSCR_TZONE">
+				</TextView>					
+				<Spinner 
+					android:id="@+id/tzoneSpn"
+			        android:layout_height="wrap_content" android:layout_weight="1" 
+			        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content"/>
+			</LinearLayout>
+			
+			<LinearLayout 
+				android:orientation="vertical"
+				android:layout_margin="2dip"
+				android:layout_below="@+id/tzonelinear"
+				android:id="@+id/itemDesclinear"
+				android:visibility="gone"
+				android:background="@layout/border_black"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">				
+				<LinearLayout 
+					android:orientation="vertical"
+					android:background="@color/darkbluecolor"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<LinearLayout 
+						android:orientation="horizontal"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+						android:layout_marginBottom="5dip" android:layout_marginLeft="5dip">
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+							android:minHeight="30dip"
+							android:id="@+id/descTV" >
+						</TextView>
+					</LinearLayout>  
+				</LinearLayout> 
+			</LinearLayout>		
+			
+			<!-- <LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:visibility="gone"
+				android:layout_below="@+id/tzonelinear"
+				android:id="@+id/itemDesclinear" >				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/itemDescLbl" 
+					android:layout_weight="1" android:text="@string/SERVICEPRO_TSKEDIT_ITEMDESC">
+				</TextView>				
+				<EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/itemdescET" 
+					android:width="150dip"
+					android:editable="false" android:enabled="false"
+					>
+				</EditText>
+			</LinearLayout> -->
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/itemDesclinear"
+				android:id="@+id/cus1linear"  android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/cus1Lbl" 
+					android:layout_weight="1"	
+					android:text="@string/SERVICEPRO_TSKEDIT_CONNAME1">
+				</TextView>				
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus1TV" >
+				</TextView>
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus1ET" 
+					android:editable="false" android:enabled="false"
+					android:width="150dip"
+					>
+				</EditText> -->
+			</LinearLayout>
+						
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/cus1linear"
+				android:id="@+id/cus1phlinear" android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/cus1phLbl" 
+					android:layout_weight="1"	
+					android:text="@string/SERVICEPRO_TSKEDIT_TELNO1_CUS1">
+				</TextView>				
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus1phET" 
+					android:width="150dip"
+					android:editable="false" android:enabled="false"
+					>
+				</EditText>	 -->			
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus1phTV" >
+				</TextView>
+				<ImageButton 
+					android:id="@+id/cus1callbtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" 
+			        android:background="@drawable/ph_icon" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/cus1phlinear"
+				android:id="@+id/cus1ph2linear" android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/cus1ph2Lbl" 
+					android:layout_weight="1"	
+					android:text="@string/SERVICEPRO_TSKEDIT_TELNO2_CUS1">
+				</TextView>				
+				<!-- <EditText 
+				    style="@style/appText"   
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus1ph2ET" 
+					android:width="150dip"
+					android:editable="false" android:enabled="false"
+					>
+				</EditText>		 -->
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus1ph2TV" >
+				</TextView>		
+				<ImageButton 
+					android:id="@+id/cus1call2btn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" 
+			        android:background="@drawable/ph_icon" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/cus1ph2linear"
+				android:id="@+id/cus2linear"  android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/cus2Lbl" 
+					android:layout_weight="1"	
+					android:text="@string/SERVICEPRO_TSKEDIT_CONNAME2">
+				</TextView>				
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus2TV" >
+				</TextView>	
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus2ET" 
+					android:width="150dip"
+					android:editable="false" android:enabled="false"
+					>
+				</EditText> -->
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/cus2linear"
+				android:id="@+id/cus2phlinear" android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/cus2phLbl" 
+					android:layout_weight="1"	
+					android:text="@string/SERVICEPRO_TSKEDIT_TELNO1_CUS2">
+				</TextView>				
+				<!-- <EditText 
+				    style="@style/appText"   
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus2phET" 
+					android:width="150dip"
+					android:editable="false" android:enabled="false"
+					>
+				</EditText>	 -->			
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus2phTV" >
+				</TextView>
+				<ImageButton 
+					android:id="@+id/cus2callbtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" 
+			        android:background="@drawable/ph_icon" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/cus2phlinear"
+				android:id="@+id/cus2ph2linear" android:visibility="gone">				     
+				<TextView   
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/cus2ph2Lbl" 
+					android:layout_weight="1"	
+					android:text="@string/SERVICEPRO_TSKEDIT_TELNO2_CUS2">
+				</TextView>				
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus2ph2ET" 
+					android:width="150dip"
+					android:editable="false" android:enabled="false"
+					>
+				</EditText>	 -->	
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/cus2ph2TV" >
+				</TextView>		
+				<ImageButton 
+					android:id="@+id/cus2call2btn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" 
+			        android:background="@drawable/ph_icon" android:layout_gravity="center_vertical" android:layout_marginLeft="5dip"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/cus2ph2linear"
+				android:id="@+id/productlinear"  android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/productLbl" 
+					android:text="@string/SERVICEPRO_TSKEDIT_PRODUCT_LBL">
+				</TextView>	
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/productdescVal" android:text="" android:gravity="right">
+				</TextView>							
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/productET" 
+					android:editable="false" android:enabled="false"
+					android:width="150dip"
+					>
+				</EditText> -->
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/productlinear"
+				android:id="@+id/seriallinear"  android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/serialLbl" 
+					android:layout_weight="1"	
+					android:text="@string/SERVICEPRO_TSKEDIT_SERIAL_LBL">
+				</TextView>			
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/serialTV" >
+				</TextView>								
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/serialET" 
+					android:editable="false" android:enabled="false"
+					android:width="150dip"
+					>
+				</EditText> -->
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/seriallinear"
+				android:id="@+id/intbaselinear"  android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/intbaseLbl" 
+					android:text="@string/SERVICEPRO_TSKEDIT_INSTBASE_LBL">
+				</TextView>			
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/intbaseDescTV" android:gravity="right">
+				</TextView>		
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/intbaseET" 
+					android:editable="false" android:enabled="false"
+					android:width="150dip"
+					>
+				</EditText> -->
+			</LinearLayout>
+			
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dip"	
+				android:layout_below="@+id/intbaselinear"
+				android:id="@+id/complinear"  android:visibility="gone">				     
+				<TextView  
+				    style="@style/appLabel"
+					android:editable="false"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="150dp"
+					android:id="@+id/compLbl" 
+					android:text="@string/SERVICEPRO_TSKEDIT_COMPONENT_LBL">
+				</TextView>		
+				<TextView  
+					android:editable="false"
+					style="@style/appText"
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/compDescTV" android:gravity="right">
+				</TextView>			
+				<!-- <EditText 
+				    style="@style/appText" 
+					android:padding="5dip"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/compET" 
+					android:editable="false" android:enabled="false"
+					android:width="150dip"
+					>
+				</EditText> -->
+			</LinearLayout>
+			
+			<LinearLayout 
+				android:orientation="vertical"
+				android:layout_margin="2dip"
+				android:layout_below="@+id/complinear"
+				android:id="@+id/notes_header_linear"
+				android:background="@layout/border_black"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content">				
+				<LinearLayout 
+					android:orientation="vertical"
+					android:background="@color/darkbluecolor"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<LinearLayout 
+						android:orientation="horizontal"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" 
+						android:layout_marginBottom="5dip" android:layout_marginLeft="5dip">
+						<TextView  
+							android:editable="false"
+							style="@style/appText"
+							android:layout_height="wrap_content"
+							android:layout_width="fill_parent"
+							android:minHeight="50dip"
+							android:id="@+id/notesTV" >
+						</TextView>					
+					</LinearLayout>  
+				</LinearLayout> 
+			</LinearLayout>	
+			
+			<!-- <EditText  
+			    style="@style/appText"
+				android:layout_below="@+id/complinear"
+				android:padding="5dip"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:minHeight="60dip"
+				android:id="@+id/notesET" 
+				android:editable="false" android:enabled="false"
+				>
+			</EditText> -->
+		</RelativeLayout>
+	</ScrollView>
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+	    android:layout_below="@+id/notesET" android:gravity="center" android:layout_marginBottom="10dip">	
+	    <ImageButton 
+			android:id="@+id/attaBtn"
+	        android:layout_height="wrap_content" android:layout_marginRight="10dp"
+	        android:layout_width="wrap_content"  android:background="@drawable/btn_atta" android:layout_marginLeft="5dip" android:visibility="gone" />
+	    <ImageButton 
+			android:id="@+id/sapAttachBtn"
+	        android:layout_height="wrap_content" android:layout_marginRight="10dp"
+	        android:layout_width="wrap_content"  android:background="@drawable/attach" android:layout_marginLeft="5dip" android:visibility="gone" />
+	    <ImageButton 
+			android:id="@+id/signAttsBtn"
+	        android:layout_height="wrap_content" android:layout_marginRight="10dp"
+	        android:layout_width="wrap_content" android:background="@drawable/sign_icon" android:layout_marginLeft="5dip" android:visibility="gone" />
+
+	    <ImageButton 
+			android:id="@+id/prevBtn"
+	        android:layout_height="wrap_content" android:layout_marginRight="10dp"
+	        android:layout_width="wrap_content"  android:background="@drawable/left" android:layout_marginLeft="5dip" android:visibility="visible" />
+	    
+		<Button 
+			android:id="@+id/cancelbtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	        android:text="@string/SERVICEPRO_CANCEL"
+	        android:layout_marginRight="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+		<Button 
+			android:id="@+id/savebtn" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	        android:text="@string/SERVICEPRO_SAVE"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+
+		  <ImageButton 
+			android:id="@+id/nextBtn"
+	        android:layout_height="wrap_content" android:layout_marginRight="10dp"
+	        android:layout_width="wrap_content"  android:background="@drawable/right" android:layout_marginLeft="5dip" android:visibility="visible" />
+	</LinearLayout>	
+</LinearLayout>
+</RelativeLayout>

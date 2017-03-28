@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+	
+    <LinearLayout 
+		android:orientation="vertical"
+		android:layout_margin="2dip"
+		android:id="@+id/entitle_header_linear"
+		android:background="@layout/border_black"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">				
+		<LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/darkbluecolor"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content"  style="@style/appLabel" android:textSize="20dp" 
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_LBLSERVORD"/>
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appText" android:textSize="20dp" 
+				android:id="@+id/entServiceOrdTV"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content"  style="@style/appLabel"  android:textSize="20dp" 
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_LBLENTPACK"/>
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appText" android:textSize="20dp" 
+				android:id="@+id/entProfileDescTV"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>
+		</LinearLayout> 
+	</LinearLayout>
+<!-- 	
+   <LinearLayout 
+    android:orientation="vertical"
+    android:layout_margin="2dip"
+    android:id="@+id/entilementheaderlinear"
+	android:background="@layout/border_black"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <ScrollView 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="65dip" android:fadeScrollbars="false" android:fadingEdge="none">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/white"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip">
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content"  style="@style/appLabel"  android:textSize="20dp" 
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="Service Order: "/>
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appText"  android:textSize="20dp" 
+				android:id="@+id/entServiceOrdTV"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content"  style="@style/appLabel"  android:textSize="20dp" 
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="Entitlement Package: "/>
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appText"  android:textSize="20dp" 
+				android:id="@+id/entProfileDescTV"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content"  style="@style/appLabel"  android:textSize="20dp" 
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEORD_CNFSCR_LBL_SO"/>
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appText"  android:textSize="20dp" 
+					android:id="@+id/customer_so"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+		</LinearLayout> 
+	</ScrollView>
+</LinearLayout>	 -->
+
+<HorizontalScrollView android:id="@+id/HorizontalScrollView01" 
+    				android:layout_below="@+id/entitle_header_linear"
+                   android:layout_width="wrap_content"         
+                   android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="match_parent"
+			android:orientation="vertical" android:layout_weight="1"
+			android:layout_height="match_parent"> 
+		<TableLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/entitlementtbllayout1">
+			<TableRow style="@style/HeaderRow">	
+			    
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV1"
+		            android:text="@string/SERVICEPRO_LBLENTTYP"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "300dip"
+		            android:textSize="18dp"
+		         />		    
+		          <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV5"
+		            android:text="@string/SERVICEPRO_LBLENTFRE"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "160dip"
+		            android:textSize="18dp"
+		          />
+		          <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV6"
+		            android:text="@string/SERVICEPRO_LBLENTTIMEPRI"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "250dip"
+		            android:textSize="18dp"
+		          />
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV2"
+		            android:text="@string/SERVICEPRO_LBLENTLABDISC"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "160dip"
+		            android:textSize="18dp"
+		         />		        
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV3"
+		            android:text="@string/SERVICEPRO_LBLENTPARTDISC"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "160dip"
+		            android:textSize="18dp"
+		          />
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV4"
+		            android:text="@string/SERVICEPRO_LBLENTTRAVDISC"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "160dip"
+		            android:textSize="18dp"
+		          />
+		    </TableRow>
+		</TableLayout>
+		
+		<ScrollView android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/entitlementtbllayout2">
+			</TableLayout>
+		</ScrollView>
+	</LinearLayout>
+</HorizontalScrollView>
+    
+</RelativeLayout>

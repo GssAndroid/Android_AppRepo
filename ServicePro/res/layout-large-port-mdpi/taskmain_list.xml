@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingBottom="10px" android:paddingTop="10px" android:paddingLeft="10px" android:paddingRight="10px">
+	
+	<ImageView 
+		android:id="@+id/indicator"
+		android:layout_marginTop="5px" 
+		android:layout_marginRight="5px" 
+		android:layout_width="20dip" android:layout_height="20dip" />
+	<ImageView 
+		android:id="@+id/status"
+		android:layout_marginTop="5px" 
+		android:layout_marginRight="7px" 
+		android:src="@drawable/light_grey" android:layout_width="21dip" android:layout_height="21dip"/>
+	<TextView 
+		android:layout_marginTop="5px" 
+		android:focusable="false" 
+		android:id="@+id/date" 
+		style="@style/appText"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="5px" 
+		android:textSize="18dp"
+		android:layout_width="wrap_content">
+	</TextView>
+	<TextView 
+		android:layout_marginTop="5px" 
+		android:focusable="false" 
+		android:id="@+id/text" 
+		style="@style/appText"
+		android:layout_height="wrap_content"
+		android:layout_weight="1" 
+		android:textSize="18dp"
+		android:layout_width="wrap_content">
+	</TextView>
+	<ImageView 
+		android:id="@+id/errstatus"
+		android:layout_marginTop="5px" 
+		android:layout_marginRight="7px" 
+		android:src="@drawable/notify" android:layout_width="24dip" android:layout_height="24dip" android:visibility="gone"/>
+</LinearLayout>

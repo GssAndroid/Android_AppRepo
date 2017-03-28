@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:text="@string/SERVICEPRO_LBLPLANTSTRLOC" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+			<Spinner 
+				android:id="@+id/plantLoc_sp"
+		        android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="150dip" />
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel" 
+			    android:text="@string/SERVICEPRO_LBLMATID" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+			<TextView  
+				android:editable="false"
+				style="@style/appText"
+				android:padding="5dip"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_gravity="right|center_vertical"
+				android:id="@+id/materialIDTV" >
+			</TextView>	
+			<!-- <EditText 
+				android:id="@+id/serialET"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip"/> -->
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:text="@string/SERVICEPRO_LBLQTY" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+			<EditText 
+				android:id="@+id/quantityET"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:numeric="integer"/>
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:text="@string/SERVICEPRO_LBLUNIT" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+			<!-- <EditText 
+				android:id="@+id/unitET"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip"/> -->
+			<TextView  
+				android:editable="false" android:layout_gravity="right|center_vertical"
+				style="@style/appText"
+				android:padding="5dip"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/unitTV" >
+			</TextView>	
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:text="@string/SERVICEPRO_LBLREQDATE" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />			
+			<LinearLayout 
+			    android:orientation="horizontal"
+			    android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right|center_vertical">
+				<TextView 
+					android:id="@+id/req_date"
+					android:text="@string/SERVICEPRO_RPMNSCR_LBLDATE"
+					android:textColor="@color/black"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"   />
+			    <TextView 
+					android:id="@+id/req_time"
+					android:text="@string/SERVICEPRO_LBLTIME"
+					android:layout_marginLeft="5dip"
+					android:textColor="@color/black"
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"  />		       
+			</LinearLayout>					
+		</LinearLayout>
+		
+		<Button 
+			android:id="@+id/createBtn"
+	        android:text="@string/SERVICEPRO_LBLCREORD"  android:background="@drawable/btn_blue1" style="@style/mainBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="20dip"/>
+	</LinearLayout>
+</ScrollView>

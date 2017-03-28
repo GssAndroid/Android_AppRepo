@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.globalsoft.ServicePro"
+      android:versionCode="2"
+      android:versionName="2.0">
+      
+    <uses-sdk android:minSdkVersion="8" />
+    
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name"
+        android:process="com.globalsoft.sapqueueprocessorsharedprocess" 
+        android:theme="@android:style/Theme.Light">
+        
+        <provider android:name="com.globalsoft.ServicePro.Database.ServiceProOfflineContraintsCP"
+           android:authorities="com.globalsoft.ServicePro.ServiceProOfflineContraintsCP"> 
+        </provider>
+		<provider android:name="com.globalsoft.ServicePro.Database.ReportOfflineCP"
+           android:authorities="com.globalsoft.ServicePro.ReportOfflineCP"> 
+        </provider>        
+        <provider android:name="com.globalsoft.ServicePro.Database.VanStkOfflineContraintsCP"
+           android:authorities="com.globalsoft.ServicePro.VanStkOfflineContraintsCP"> 
+        </provider>
+        
+        <activity
+            android:label="@string/app_name" android:theme="@style/customTheme"
+            android:name=".ServiceProIndex" android:configChanges="orientation">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <service android:enabled="true" android:name=".BackgroundService" >
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_BG_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        
+        <activity android:name=".ServicePro" android:theme="@style/customTheme" android:label="@string/app_name" android:windowSoftInputMode="stateHidden" >
+        </activity> 
+        
+		<!-- <activity android:name=".ServicePro" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> -->
+        
+        <activity android:name=".ReportMainScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEPRO_RPDTSCR_TITLE">
+        </activity>
+        
+        <activity android:name=".ServiceProAttachmentImageDisplayScr" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEPRO_RPDTSCR_TITLE">
+        </activity>
+        
+        
+        <activity android:name=".ReportDetailScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEPRO_RPDTSCR_TITLE">
+        </activity>        
+        
+        <activity android:name="ServiceProTaskMainScreenForPhone" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_MAINSCR_TITLE">
+        </activity>  
+        
+         <activity android:name=".ServiceProDiognosisSettings" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_MAINSCR_TITLE">
+        </activity>  
+        
+        <activity android:name=".ServiceProTaskMainScreenForTablet" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_MAINSCR_TITLE">
+        </activity>
+        
+        <activity android:name=".ServiceProTaskEditScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_EDITSCR_TITLE">
+    	</activity>  
+        
+		<activity android:name=".ServiceProConfirmationScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_CONFSCR_TITLE">
+        </activity>   
+        
+        <activity android:name=".ServiceProActivityMainScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_ACTIVITYMAINSCR_TITLE">
+        </activity>   
+                
+        <activity android:name=".ServiceProActivityEditScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEORD_FLTSCR_LBL_ACT">
+        </activity>   
+        
+        <activity android:name=".ServiceProFaultScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_FAULTSCR_TITLE">
+        </activity>   
+        
+        <activity android:name=".ServiceProFaultEditScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEORD_FLTSCR_TITLE">
+        </activity>   
+        
+        <activity android:name=".ServiceProSparesScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SAPTASK_SPARESCR_TITLE">
+        </activity>   
+        
+        <activity android:name=".ServiceProSparesEditScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEORD_COMMON_SPARES">
+        </activity>     
+        
+        <activity android:name=".ImageCapActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>        
+        
+        <activity android:name=".ImageDislayActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        
+        <activity android:name=".VanStockMainScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEPRO_VANSTOCK_TITLE">
+        </activity>
+        
+        <activity android:name=".VanStockOverviewScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEPRO_VANSTOCK_TITLE">
+        </activity>
+         
+        <activity android:name=".VanStockMainListScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:label="@string/SERVICEPRO_VANSTOCK_TITLE">
+        </activity>      
+        
+        <activity android:name=".VanStockColleagueScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:label="VanStockColleagueScreen" android:configChanges="orientation">
+        </activity>      
+		
+		<activity android:name=".VanStockSerialDetScreen" android:theme="@style/customTheme" android:label="@string/VANSTO_SER_DET_TITLE" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" >
+        </activity>   
+        
+        <activity android:name=".VanStockDetailScreen" android:theme="@style/customTheme" android:label="VanStockDetailScreen" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" >
+        </activity>   
+		
+		<activity android:name=".VanStockTransOrdCreateScreen" android:theme="@style/customTheme" android:label="@string/VANSTO_ORDER_CRE_TITLE" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        
+		<activity android:name=".LeaveMainScreen" android:theme="@style/customTheme" android:label="LeaveMainScreen" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" >
+        </activity>  
+        
+		<activity android:name=".LeaveApplyScreen" android:theme="@style/customTheme" android:label="LeaveApplyScreen" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" >
+        </activity>  
+		
+		<activity android:name=".ServiceProEntitlementScreen" android:theme="@style/customTheme" android:label="ServiceProEntitlementScreen" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" >
+        </activity> 
+		
+        <activity android:name=".ServiceProShowMap" android:theme="@style/customTheme" android:configChanges="orientation" android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+        <activity android:name=".FingerPaint" android:theme="@style/customTheme" android:label="Signature" android:configChanges="orientation">            
+        </activity> 
+        
+        <activity android:name=".About" android:label="ServicePro" android:configChanges="orientation">            
+        </activity>
+        
+        <activity android:name=".ServiceProColleagueListScreen" android:theme="@style/customTheme" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" android:label="@string/SERVICEPRO_COLLEAGUE_LIST_TITLE">            
+        </activity>    
+        
+        <activity android:name=".ServiceProColleagueTaskListScreen" android:theme="@style/customTheme" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" android:label="@string/SERVICEPRO_COLLEAGUE_TASK_LIST_TITLE">            
+        </activity>      
+        
+        <activity android:name=".ServiceProSAPAttachmentList" android:theme="@style/customTheme" android:configChanges="orientation" android:windowSoftInputMode="stateHidden" android:label="@string/SERVICEPRO_ATTACHTITLE">            
+        </activity>  
+        
+        <activity android:name="com.globalsoft.ContactLib.ContactMain" android:label="Contacts" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>		        
+        <activity android:name="com.globalsoft.ContactLib.ContactProSAPDetails" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>               
+        <activity android:name="com.globalsoft.ContactLib.AlrtActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent">
+        </activity>        
+        <service android:enabled="true" android:name="com.globalsoft.ContactLib.Service.ContactService">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCH_CONT_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        
+        <activity android:name="com.globalsoft.SapLibActivity.CrtGenActivity" android:theme="@style/customTheme" android:label="CrtGenActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>        
+        <activity android:name="com.globalsoft.SapLibActivity.GenActivityGallery" android:theme="@style/customTheme"  android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity> 
+        
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.CustomerListActivity" android:label="CustomerListActivity" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+       	</activity>          
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.CustomerListDetailScreen" android:label="CustomerListDetailScreen" android:theme="@style/customTheme" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+                  
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.SalesProCustActivity" android:theme="@style/customTheme" android:label="SalesProCustActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>           
+        <activity android:name="com.globalsoft.SalesProCustActivityLib.SalesProCustDetailScreen" android:theme="@style/customTheme" android:label="SalesProCustDetailScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+        
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderListActivity" android:theme="@style/customTheme" android:label="SalesOrderListActivity" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>         
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderItemScreen" android:theme="@style/customTheme" android:label="SalesOrderItemScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>         
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderItemDetailScreen" android:theme="@style/customTheme" android:label="SalesOrderItemDetailScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>          
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderCreation" android:theme="@style/customTheme" android:label="SalesOrderCreation" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>         
+        <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderCrtCustScreen" android:theme="@style/customTheme" android:label="SalesOrderCrtCustScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>         
+	    <activity android:name="com.globalsoft.SalesOrderLib.SalesOrderCrtMaterialScreen" android:theme="@style/customTheme" android:label="SalesOrderCrtMaterialScreen" android:windowSoftInputMode="stateHidden" android:configChanges="orientation">
+        </activity>
+                
+       <!--  <uses-library android:name="com.google.android.maps" />       -->
+        
+        <activity android:name=".CaptureActivity" 
+        		android:screenOrientation="landscape"
+              	android:configChanges="orientation|keyboardHidden">
+			<intent-filter>
+				<action android:name="com.google.zxing.client.android.SCAN"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<!-- Allow web apps to launch Barcode Scanner by linking to http://zxing.appspot.com/scan. -->
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="http" android:host="zxing.appspot.com" android:path="/scan"/>
+			</intent-filter>
+			<!-- We also support a Google Product Search URL. -->
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="http" android:host="www.google.com" android:path="/m/products/scan"/>
+			</intent-filter>
+			<!-- And the UK version. -->
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="http" android:host="www.google.co.uk" android:path="/m/products/scan"/>
+			</intent-filter>
+        </activity>
+    </application>
+    <!-- <uses-permission android:name=".BackgroundService" /> -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	
+	<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+	<!-- Calendar related  -->
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	
+	<!-- Wifi related  -->
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+</manifest>

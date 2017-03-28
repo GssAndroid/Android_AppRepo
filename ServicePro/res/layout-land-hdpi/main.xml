@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	>
+	<!-- <ImageView 
+		android:layout_width="wrap_content" 
+		android:id="@+id/info" 
+		android:layout_height="wrap_content" 
+		android:src="@drawable/info" 
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true" android:layout_marginTop="10dip">
+	</ImageView> -->
+	<ScrollView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none" android:layout_centerInParent="true">
+		<RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="top|center"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:layout_alignParentLeft="true" >
+			<LinearLayout
+			    android:orientation="horizontal"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/mainbtnlayout1"
+			    android:layout_alignParentLeft="true">				
+				<Button
+					android:id="@+id/taskbtn" android:background="@drawable/main_serviceorder" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="8dp" />			
+				<Button
+					android:id="@+id/reportbtn" android:background="@drawable/main_comptasks" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="8dp" />	
+				<Button
+					android:id="@+id/vanstockbtn" android:background="@drawable/main_vanstock" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="8dp" />
+				<Button
+					android:id="@+id/myutilizationbtn" android:background="@drawable/main_myutilization" style="@style/mainImgBtnStyle"/>							
+			</LinearLayout>  	
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/mainbtnlayout2"
+				android:layout_below="@+id/mainbtnlayout1"
+				android:paddingTop="8dp">					
+			    <Button
+					android:id="@+id/leavebtn" android:background="@drawable/main_leavemgmt" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="8dp"/>	
+				<Button
+					android:id="@+id/contactsBtn" android:background="@drawable/enterprisecontact" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="8dp" />			
+				<Button
+					android:id="@+id/activitiesBtn" android:background="@drawable/activities" style="@style/mainImgBtnStyle" 
+					android:layout_marginRight="8dp"/>
+				<Button
+					android:id="@+id/billablebtn" android:background="@drawable/main_billable" style="@style/mainImgBtnStyle"/>	
+			</LinearLayout>  
+		</RelativeLayout>
+	</ScrollView>	
+</RelativeLayout>

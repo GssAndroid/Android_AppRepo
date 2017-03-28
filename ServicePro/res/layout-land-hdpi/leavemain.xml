@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+	
+<HorizontalScrollView android:id="@+id/HorizontalScrollView01" 
+                   android:layout_width="wrap_content"         
+                   android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="match_parent"
+			android:orientation="vertical" android:layout_weight="1"
+			android:layout_height="match_parent"> 
+		<TableLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/leavemaintbllayout1">
+			<TableRow style="@style/HeaderRow">
+			    <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV7"
+		            android:text=" "
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="false"
+		            android:layout_width = "40dip"
+	        	  />
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV1"
+		            android:text="@string/SERVICEPRO_LBLFROM"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "130dip"
+		         />
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV2"
+		            android:text="@string/SERVICEPRO_LBLTO"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "130dip"
+		         />
+		        <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV3"
+		            android:text="@string/SERVICEPRO_LBLABSTYP"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "110dip"
+		          />
+		         <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV4"
+		            android:text="@string/SERVICEPRO_LBLSTATUS"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "150dip"
+		          />
+		          <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV5"
+		            android:text="@string/SERVICEPRO_LBLSUBON"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "130dip"
+		          />
+		          <TextView
+		         	style="@style/HeaderText"
+		       		android:id="@+id/TableHeaderTV6"
+		            android:text="@string/SERVICEPRO_LBLABSREQNO"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "180dip"
+		          />
+		    </TableRow>
+		</TableLayout>
+		
+		<ScrollView android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/leavemaintbllayout2">
+			</TableLayout>
+		</ScrollView>
+	</LinearLayout>
+</HorizontalScrollView>
+    
+</RelativeLayout>

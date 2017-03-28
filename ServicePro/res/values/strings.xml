@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ServicePro</string>
+    <string-array name="tasks_prior_array">
+        <item>Very High</item>
+        <item>High</item>
+        <item>Medium</item>
+    </string-array>
+    
+    <!-- <string-array name="tasks_status_array">
+        <item>Open</item>
+        <item>In Process</item>
+        <item>Released</item>
+        <item>Declined</item>
+        <item>Completed</item>
+    </string-array> -->
+    
+    <string-array name="tasks_status_array">
+        <item>Ready</item>
+        <item>Accepted</item>
+        <item>Deferred - no parts</item>
+        <item>Declined</item>
+        <item>Completed</item>        
+    </string-array>
+    
+    <string-array name="reject_status_array">
+    	<item>Please select</item>
+        <item>On Leave</item>
+        <item>Sick</item>
+        <item>Engaged in another Job</item>
+        <item>Training</item>
+        <item>Travelling</item>
+        <item>Other</item>
+    </string-array>
+    
+	
+    <string name="SERVICEPRO_TSKEDIT_DECL">Declined</string>
+    <string name="SERVICEPRO_TSKEDIT_OTHR">Other</string>	
+	<string name="SERVICEPRO_TSKEDIT_STATUS">Status </string>
+	<string name="SERVICEPRO_TSKEDIT_SLREA">Select a Reason </string>
+	<string name="SERVICEPRO_TSKEDIT_ETRREA">Other Reason </string>
+	<string name="SERVICEPRO_TSKEDIT_PRI">Priority </string>
+	<string name="SERVICEPRO_TSKEDIT_STARTON">Start Date </string>
+	<string name="SERVICEPRO_TSKEDIT_ETA_DATE_LBL">Estimated arrival </string>
+	<string name="SERVICEPRO_TSKEDIT_TRID">Service Doc. </string>
+	<string name="SERVICEPRO_TSKEDIT_SERORDTYP">Serv. Doc. Type</string>
+	<string name="SERVICEPRO_TSKEDIT_CONNAME1">Contact Name </string>
+	<string name="SERVICEPRO_TSKEDIT_TELNO1_CUS1">Tel No. </string>
+	<string name="SERVICEPRO_TSKEDIT_TELNO2_CUS1">Alt. Tel No. </string>
+	<string name="SERVICEPRO_TSKEDIT_CONNAME2">Contact Name2 </string>
+	<string name="SERVICEPRO_TSKEDIT_TELNO1_CUS2">Tel No. </string>
+	<string name="SERVICEPRO_TSKEDIT_TELNO2_CUS2">Alt. Tel No. </string>
+	<string name="SERVICEPRO_TSKEDIT_ITEMDESC">Description  </string>
+	
+	<string name="SERVICEPRO_TSKEDIT_PRODUCT_LBL">Product Desc. </string>
+	<string name="SERVICEPRO_TSKEDIT_SERIAL_LBL">Serial# </string>
+	<string name="SERVICEPRO_TSKEDIT_INSTBASE_LBL">Inst. Base Desc. </string>
+    <string name="SERVICEPRO_TSKEDIT_COMPONENT_LBL">Component Desc. </string>
+    
+    <string name="SERVICEPRO_RPDTSCR_CONTPER">Contact Person</string>
+	<string name="SERVICEPRO_RPDTSCR_CRDBY">Created By</string>
+	<string name="SERVICEPRO_RPDTSCR_CURRNCY">Currency</string>
+	<string name="SERVICEPRO_RPDTSCR_DESC">Description</string>
+	<string name="SERVICEPRO_RPDTSCR_EQUPNO">Equipment No</string>
+	<string name="SERVICEPRO_RPDTSCR_LABHRS">Labour Hours</string>
+	<string name="SERVICEPRO_RPDTSCR_NETVAL">Net Value</string>
+	<string name="SERVICEPRO_RPDTSCR_PODATE">PO Date</string>
+	<string name="SERVICEPRO_RPDTSCR_POSTDAT">Posting Date</string>
+	<string name="SERVICEPRO_RPDTSCR_PRIOP">Priority</string>
+	<string name="SERVICEPRO_RPDTSCR_REQSTRDAT">Req Start Date</string>
+	<string name="SERVICEPRO_RPDTSCR_SOLPAR">Sold to Party</string>
+	<string name="SERVICEPRO_RPDTSCR_SOLPARTXT">Sold to Party Text</string>
+	<string name="SERVICEPRO_RPDTSCR_TITLE">Completed Tasks - Current Month</string>
+	<string name="SERVICEPRO_RPDTSCR_TOTHRS">Total Hours</string>
+	<string name="SERVICEPRO_RPDTSCR_TRNSID">Service Doc.</string>
+	<string name="SERVICEPRO_RPDTSCR_TRNSTYPE">Transaction Type</string>
+	<string name="SERVICEPRO_RPDTSCR_TRNSTYPTXT">Transaction Type Text</string>
+	<string name="SERVICEPRO_RPDTSCR_TRVLHRS">Travel Hours</string>
+	<string name="SERVICEPRO_RPDTSCR_USRSTS">User Status</string>
+	<string name="SERVICEPRO_RPDTSCR_WRKENDDAT">Work End Date</string>
+	<string name="SERVICEPRO_RPDTSCR_WRKSTRDAT">Work Start Date</string>
+	
+	<string name="SERVICEORD_MAIN_ACTSCR_ATTACHMENT_ALERT">Please capture the image.</string>
+	<string name="SERVICEORD_MAIN_ACTSCR_ATTACHMENT_SIGN_ALERT">Please Sign.</string>
+	<string name="SERVICEORD_ACTSCR_LBL_ACTVY">Service</string>
+	<string name="SERVICEORD_ACTSCR_TZONE">Time Zone </string>
+    <string name="SERVICEORD_FLTSCR_OK">Ok</string>
+    <string name="SERVICEORD_ACTSCR_LBL_DURHRS">Duration Hrs</string>
+    <string name="SERVICEORD_ACTSCR_LBL_SRTDT">Start Dt. Time</string>
+    <string name="SERVICEORD_ACTSCR_LBL_ENDDT">End Dt. Time</string>
+    <string name="SERVICEORD_ACTSCR_LBL_NOTES">Notes</string>
+	<string name="SERVICEORD_CNFSCR_LBL_CUST">Customer</string>
+	<string name="SERVICEORD_CNFSCR_LBL_DUEDAT">Start Date </string>
+	<string name="SERVICEORD_CNFSCR_LBL_SO">Service Doc. </string>
+	<string name="SERVICEORD_COMMON_SAVESUBMIT">Save &amp; Submit</string>
+	<string name="SERVICEORD_COMMON_ACTVTS">Services</string>
+	<string name="SERVICEORD_COMMON_FAULT">Fault</string>
+	<string name="SERVICEORD_COMMON_SPARES">Spares</string>
+	<string name="SERVICEORD_COMMON_DG_DELTHIS">Do you really want to delete this item?</string>
+	<string name="SERVICEORD_COMMON_DG_SELACTVY">Select an Service to proceed!</string>
+	<string name="SERVICEORD_COMMON_DG_SELMULCHEHBOXACTVY">Please Select one Checkbox of the line item!</string>
+	<string name="SERVICEORD_COMMON_DG_FULLDONE">Are you fully done? Once saved can\'t be edited further.</string>
+	<string name="SERVICEPRO_OK">Ok</string>
+	<string name="SERVICEPRO_CANCEL">Cancel</string>
+	<string name="SERVICEPRO_SAVE">Save</string>
+	<string name="SERVICEPRO_OPTIONS"></string>
+	<string name="SERVICEPRO_WAIT_TEXTS">Please wait while processing...</string>
+	<string name="SERVICEPRO_WAIT_TEXTS_AFTER_RESULT">Compiling Data...</string>	
+	<string name="SERVICEPRO_WAIT_TEXTS_UI">Rendering...</string>
+	<string name="SERVICEPRO_WAIT_TEXTS_FOR_UPDATION">Please wait updation process going on from queue process...</string>
+	<string name="SERVICEORD_ACTSCR_ERR_DTLESSER">End date shouldn\'t be lesser than Start Date</string>
+	<string name="SERVICEORD_FLTSCR_LBL_ACT">Services</string>
+	<string name="SERVICEORD_FLTSCR_LBL_DUR">Duration</string>
+	<string name="SERVICEORD_FLTSCR_SYMGRP">Symptom Group</string>
+	<string name="SERVICEORD_FLTSCR_SYMCD">Symptom Code</string>
+	<string name="SERVICEORD_FLTSCR_SYMDESC">Symptom Desc.</string>
+	<string name="SERVICEORD_FLTSCR_PRBGRP">Problem Group</string>
+	<string name="SERVICEORD_FLTSCR_PRBCD">Problem Code</string>
+	<string name="SERVICEORD_FLTSCR_PROBDESC">Problem Desc.</string>
+	<string name="SERVICEORD_FLTSCR_CAUSGRP">Cause Group</string>
+	<string name="SERVICEORD_FLTSCR_CAUSCD">Cause Code</string>
+	<string name="SERVICEORD_FLTSCR_CAUSDESC">Cause Desc.</string>
+	<string name="SERVICEORD_FLTSCR_TITLE">Fault</string>
+	<string name="SERVICEORD_MATSCR_LBL_MATID">Material Id</string>
+	<string name="SERVICEORD_MATSCR_LBL_MATDESC">Material Desc.</string>
+	<string name="SERVICEORD_MATSCR_LBL_QTY">Qty</string>
+	<string name="SERVICEORD_MATSCR_LBL_UNIT">Unit</string>
+	<string name="SERVICEORD_MATSCR_LBL_SERL">Serial#</string>
+	<string name="SERVICEORD_MATSCR_LBL_OTHUNIT">Other Unit</string>
+	<string name="SERVICEPRO_VANSTOCK_TITLE">Van Stock</string>
+	<string name="SAPTASK_MAINSCR_TITLE">Service Tasks</string> 
+	<string name="SAPTASK_EDITSCR_TITLE">Service Task</string>	
+	<string name="SAPTASK_CONFSCR_TITLE">Service Confirmation Overview</string>
+	<string name="SAPTASK_ACTIVITYMAINSCR_TITLE">Service Confirmation</string>
+	<string name="SAPTASK_FAULTSCR_TITLE">Fault Confirm</string>
+	<string name="SAPTASK_SPARESCR_TITLE">Spare Confirm</string>
+	
+	<string name="VANSTO_SER_DET_TITLE">Serial No Details</string>
+	<string name="VANSTO_ORDER_CRE_TITLE">Stock Transport Order</string>
+	
+	<string name="SERVICEPRO_RPMNSCR_ERR_DETCANT">Details can\'t be shown on selected report</string>
+	<string name="SERVICEPRO_RPMNSCR_LBLDATE">Date</string>
+	<string name="SERVICEPRO_RPMNSCR_LBLSERORD">Serv.Ord</string>
+	<string name="SERVICEPRO_RPMNSCR_LBLCUST">Customer</string>
+	<string name="SERVICEPRO_MAINSCR_BTNS_SERORD">Service Tasks</string>
+	<string name="SERVICEPRO_MAINSCR_BTNS_COMPTSK">Completed Tasks</string>
+	<string name="SERVICEPRO_MAINSCR_BTNS_VANSTCK">Van Stock</string>
+	<string name="SERVICEPRO_MAINSCR_BTNS_MYLEAVES">Absence Request</string>
+	<string name="SERVICEPRO_MAINSCR_BTNS_INSTBASREP">Inst.Base Report</string>
+	<string name="SERVICEPRO_MAINSCR_BTNS_MYUTIL">Equipment History</string>
+	<string name="SERVICEPRO_MAINSCR_BTNS_BILLABLESO">Service Quote</string>
+	<string name="SERVICEORD_CNFSCR_ADDNEW">Add New Confirmation</string>
+	<string name="SERVICEORD_CNFSCR_LBL_ITEM">Item#</string>
+	<string name="SERVICEORD_CNFSCR_LBL_ITEMDET">Service Product</string>
+	<string name="SERVICEORD_CNFSCR_LBL_MDL">Service Description</string>
+	<string name="SERVICEORD_CNFSCR_LBL_SRL">Serial#</string>
+	<string name="SERVICEORD_CNFSCR_LBL_CONF">Conf#</string>
+	<string name="SERVICEORD_CNFSCR_PLZSEL">Please select an item to proceed.</string>
+	<string name="SERVICEORD_CNFSCR_ERR_CANT_EDIT">Task can\'t be edited!</string>
+	<string name="SERVICEPRO_VANSTOCK_FIND">Find </string>
+	<string name="SERVICEORD_CNFSCR_SELTSK">Confirmation can\'t be added to the selected task!</string>
+	<string name="SERVICEORD_CNFSCR_ERR_CANT_RET">Couldn\'t retreive the ProcessType and ServiceOrder Number details</string>
+	<string name="SERVICEPRO_VANSTOCK_QTY">Quantity</string>
+	<string name="SERVICEPRO_VANSTOCK_VANSTKCOL">Stock with other Rep</string>
+	<string name="SERVICEPRO_VANSTOCKCOL_TITLE">VanStock with other Rep</string>
+	<string name="SERVICEPRO_VANSTOCK_ERR_NOCOL">No Colleagues to display</string>
+	<string name="SERVICEPRO_VANSTOCKCOL_ERRSEL">Please select a Colleague!</string>	
+	<string name="SERVICEPRO_REASON_DG_MSG">Please provide a Reason.</string>
+	<string name="SERVICEPRO_REASON_Others_DG_MSG">Please provide a Reason.</string>
+	<string name="SERVICEPRO_VANSTOCK_SRL_EQUIP">Equipment</string>
+    <string name="SERVICEPRO_VANSTOCK_SRL_SRLNOS">Serial No</string>
+    <string name="SERVICEPRO_VANSTOCK_SRLNOS">Serial Nos</string>
+    <string name="SERVICEPRO_VANSTOCK_MATRL">Material</string>
+    <string name="SERVICEPRO_VANSTOCK_BATCH">Batch#</string>
+    <string name="SERVICEPRO_VANSTOCK_MATDESC">Matt Desc</string>
+    <string name="SERVICEPRO_VANSTOCK_STRLOC">Store Loc</string>
+    <string name="SERVICEPRO_VANSTOCK_PLANT">Plant</string>    
+    <string name="SERVICEPRO_VANSTOCK_STOCK">Stock</string>
+    <string name="SERVICEPRO_VANSTOCK_UNITS">Units</string>
+    <string name="SERVICEPRO_VANSTOCK_INTRANSIT">In-Transit</string>
+    <string name="SERVICEPRO_VANSTOCK_ERR_DETCANT">Details can\'t be shown on selected Vanstock</string>
+    <string name="SERVICEPRO_ERROR_MSG_OFFLINE">This Feature Not available in Offline mode.</string>
+    <string name="SERVICEPRO_QUEUE_PROCESS_WAIT_MSG">Updations going on. Please try again later.</string>
+    <string name="SERVICEPRO_VANSTOCK_OVRVIEW_TITLE">Van Stock - Overview</string>
+    <string name="SERVICEPRO_VANSTOCK_REPVIEW_TITLE">Van Stock - Replenishments</string>
+    
+    <string name="SERVICEPRO_COLLEAGUE_NAME_LBL">Name  </string>
+    <string name="SERVICEPRO_COLLEAGUE_TEL_NO1_LBL">Tel No.  </string>
+    <string name="SERVICEPRO_COLLEAGUE_TEL_NO2_LBL">Alt. Tel No.  </string>
+    <string name="SERVICEPRO_COLLEAGUE_TASK_LIST_TITLE">Task for colleague </string>
+    <string name="SERVICEPRO_COLLEAGUE_LIST_TITLE">Transfer Task to.. </string>
+    <string name="SERVICEPRO_COLLEAGUE_LIST_TITLE_FOR_TRANS">Transfer Task to.. </string>
+    <string name="SERVICEPRO_COLLEAGUE_LIST_TITLE_FOR_COLLLIST">Tasks for Rep.. </string>
+    <string name="SERVICEPRO_COLLEAGUE_LIST_ERROR_MSG_OFFLINE">No Colleague List for you </string>
+    
+    <string name="SERVICEPRO_FIND_LBL">Find </string>
+    
+    <string name="SERVICEPRO_TASK_LIST_ERROR_MSG_OFFLINE">No Tasks List for you </string>
+    <string name="SERVICEORD_SERVICEPRO_TSKEDIT_ERR_DTLESSER">Estimated arrival date shouldn\'t be lesser than Start Date</string>
+    
+	<string name="app_picker_name">Applications</string>
+	<string name="bookmark_picker_name">Bookmarks</string>
+	<string name="button_add_calendar">Add to calendar</string>
+	<string name="button_add_contact">Add contact</string>
+	<string name="button_back">Back</string>
+	<string name="button_book_search">Book Search</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="button_clipboard_empty">Clipboard empty</string>
+	<string name="button_custom_product_search">Custom search</string>
+	<string name="button_dial">Dial number</string>
+	<string name="button_done">Done</string>
+	<string name="button_email">Send email</string>
+	<string name="button_get_directions">Get directions</string>
+	<string name="button_google_shopper">Google Shopper</string>
+	<string name="button_mms">Send MMS</string>
+	<string name="button_ok">OK</string>
+	<string name="button_open_browser">Open browser</string>
+	<string name="button_product_search">Product Search</string>
+	<string name="button_read_book">Browse book</string>
+	<string name="button_search_book_contents">Search contents</string>
+	<string name="button_share_app">Application</string>
+	<string name="button_share_bookmark">Bookmark</string>
+	<string name="button_share_by_email">Share via email</string>
+	<string name="button_share_by_sms">Share via SMS</string>
+	<string name="button_share_clipboard">Clipboard</string>
+	<string name="button_share_contact">Contact</string>
+	<string name="button_show_map">Show map</string>
+	<string name="button_sms">Send SMS</string>
+	<string name="button_web_search">Web search</string>
+	<string name="button_wifi">Connect to Network</string>
+	<string name="contents_contact">Contact info</string>
+	<string name="contents_email">Email address</string>
+	<string name="contents_location">Geographic coordinates</string>
+	<string name="contents_phone">Phone number</string>
+	<string name="contents_sms">SMS address</string>
+	<string name="contents_text">Plain text</string>
+	<string name="history_clear_text">Clear history</string>
+	<string name="history_empty">Empty</string>
+  	<string name="history_empty_detail">No barcode scans have been recorded</string>
+	<string name="history_email_title">Barcode Scanner history</string>
+	<string name="history_send">Send history</string>
+	<string name="history_title">History</string>
+	<string name="menu_about">About</string>
+	<string name="menu_help">Help</string>
+	<string name="msg_google_books">Google Books</string>
+	<string name="msg_google_product">Google Product Search</string>
+	<string name="menu_history">History</string>
+	<string name="menu_settings">Settings</string>
+	<string name="menu_share">Share</string>
+	<string name="msg_about">The official Android app of the open source ZXing barcode project.</string>
+	<string name="msg_buggy">This device has known bugs that cause barcode scanning problems. For more information, visit http://code.google.com/p/zxing/wiki/FrequentlyAskedQuestions</string>
+	<string name="msg_bulk_mode_scanned">Bulk mode: barcode scanned and saved</string>
+	<string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+	<string name="msg_default_contents">Contents</string>
+	<string name="msg_default_format">Format</string>
+	<string name="msg_default_meta">Metadata</string>
+	<string name="msg_default_mms_subject">Hi</string>
+	<string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+	<string name="msg_default_time">Time</string>
+	<string name="msg_default_type">Type</string>
+	<string name="msg_encode_barcode_failed">Could not generate the requested barcode.</string>
+	<string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+	<string name="msg_google_shopper_missing">Google Shopper is not installed</string>
+	<string name="msg_install_google_shopper">Google Shopper combines barcode scanning with online and local prices, reviews and more without opening the browser. Would you like to try it?</string>
+	<string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+	<string name="msg_loading_apps">Loading list of applications\u2026</string>
+	<string name="msg_not_our_results">You are leaving this application. The search results you will see are not related to this application.</string>
+	<string name="msg_redirect">Redirect</string>
+	<string name="msg_sbc_book_not_searchable">Sorry, this book is not searchable.</string>
+	<string name="msg_sbc_failed">Sorry, the search encountered a problem.</string>
+	<string name="msg_sbc_no_page_returned">No page returned</string>
+	<string name="msg_sbc_page">Page</string>
+	<string name="msg_sbc_searching_book">Searching book\u2026</string>
+	<string name="msg_sbc_snippet_unavailable">Snippet not available</string>
+	<string name="msg_sbc_unknown_page">Unknown page</string>
+	<string name="msg_share_explanation">You can share data by displaying a barcode on your screen and scanning it with another phone.</string>
+	<string name="msg_share_subject_line">Here are the contents of a barcode I scanned</string>
+	<string name="msg_share_text">Or type some text and press Enter</string>
+	<string name="msg_unmount_usb">Sorry, the SD card is not accessible.</string>
+	<string name="preferences_actions_title">When a barcode is found\u2026</string>
+	<string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+	<string name="preferences_bulk_mode_title">Bulk scan mode</string>
+	<string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+	<string name="preferences_custom_product_search_summary" formatted="false">Use %s as a placeholder for the product ID, and %f for format</string>
+	<string name="preferences_custom_product_search_title">Custom search URL</string>
+	<string name="preferences_decode_1D_title">1D barcodes</string>
+	<string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+	<string name="preferences_decode_QR_title">QR Codes</string>
+	<string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+	<string name="preferences_front_light_title">Use front light</string>
+	<string name="preferences_general_title">General settings</string>
+	<string name="preferences_name">Settings</string>
+	<string name="preferences_play_beep_title">Beep</string>
+	<string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+	<string name="preferences_remember_duplicates_title">Remember duplicates</string>
+	<string name="preferences_reverse_image_summary">Enable on devices with a front camera only</string>
+	<string name="preferences_reverse_image_title">Reversed camera image</string>
+	<string name="preferences_result_title">Result settings</string>
+	<string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+	<string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+	<string name="preferences_supplemental_title">Retrieve more info</string>
+	<string name="preferences_vibrate_title">Vibrate</string>
+	<string name="result_address_book">Found contact info</string>
+	<string name="result_calendar">Found calendar event</string>
+	<string name="result_email_address">Found email address</string>
+	<string name="result_geo">Found geographic coordinates</string>
+	<string name="result_isbn">Found book</string>
+	<string name="result_product">Found product</string>
+	<string name="result_sms">Found SMS address</string>
+	<string name="result_tel">Found phone number</string>
+	<string name="result_text">Found plain text</string>
+	<string name="result_uri">Found URL</string>
+	<string name="result_wifi">Found WLAN Configuration</string>
+	<string name="sbc_name">Google Book Search</string>
+	<string name="share_name">Share via barcode</string>
+	<string name="title_about">Barcode Scanner v</string>
+	<string name="wa_name">WLAN Connection</string>
+	<string name="wifi_changing_network">Changing Network</string>
+	<string name="wifi_connected">Connected</string>
+	<string name="wifi_creating_network">Creating Network</string>
+	<string name="wifi_modifying_network">Modifying Network</string>
+	<string name="wifi_ssid_missing">Network name missing</string>
+	<string name="wifi_type_incorrect">Network type incorrect</string>
+	<string name="wifi_connect_failed">Network connection failed</string>
+	<string name="wifi_ssid_label">Network Name</string>
+	<string name="wifi_type_label">Type</string>
+	<string name="zxing_url">http://code.google.com/p/zxing</string>
+	
+	<string name="SERVICEPRO_LBLTIME">Time </string>
+	<string name="SERVICEPRO_LBLSTART">Start </string>
+	<string name="SERVICEPRO_LBLSTARTDATE">Start Date </string>
+	<string name="SERVICEPRO_LBLCUSTLOC">Cust. Location </string>
+	<string name="SERVICEPRO_LBLESTARR">Est. Arrival </string>
+	<string name="SERVICEPRO_LBLSERVORD">Service Doc. </string>
+	<string name="SERVICEPRO_LBLCUSTNAME">Contact Name </string>
+	<string name="SERVICEPRO_LBLPRODDESC">Product Desc. </string>
+	<string name="SERVICEPRO_LBLSERVDESC">Service Desc. </string>
+	<string name="SERVICEPRO_LBLENTPACK">Entitlement Package </string> 
+	<string name="SERVICEPRO_LBLENTTYP">Entitlement Type </string>
+	<string name="SERVICEPRO_LBLENTFRE">Frequency </string> 
+	<string name="SERVICEPRO_LBLENTTIMEPRI">Time Period </string>
+	<string name="SERVICEPRO_LBLENTLABDISC">Labor Disc % </string>
+	<string name="SERVICEPRO_LBLENTPARTDISC">Parts Disc % </string>
+	<string name="SERVICEPRO_LBLENTTRAVDISC">Travel disc % </string>
+	<string name="SERVICEPRO_LBLFROM">From </string>
+	<string name="SERVICEPRO_LBLTO">To </string>
+	<string name="SERVICEPRO_LBLABSTYP">Absence Type </string>
+	<string name="SERVICEPRO_LBLREAMEAT">Reach me at </string>
+	<string name="SERVICEPRO_LBLNOTES">Notes </string>
+	<string name="SERVICEPRO_LBLSUBMITBTN">Submit</string>
+	<string name="SERVICEPRO_LBLCANCELBTN">Cancel</string>
+	<string name="SERVICEPRO_LBLSTATUS">Status </string>
+	<string name="SERVICEPRO_LBLSUBON">Submitted On </string>
+	<string name="SERVICEPRO_LBLABSREQNO">Absence Req.No. </string>
+	<string name="SERVICEPRO_LBLTELNO">TelNo  </string>
+	<string name="SERVICEPRO_LBLMATR">Material </string>
+	<string name="SERVICEPRO_LBLQUANTY">Quantity </string>
+	<string name="SERVICEPRO_LBLUNITS">Units </string>
+	<string name="SERVICEPRO_LBLTRANS">In-Transit </string>
+	<string name="SERVICEPRO_LBLMATDESC">Matt Desc </string>
+	<string name="SERVICEPRO_LBLBATCH">Batch </string>
+	<string name="SERVICEPRO_LBLPLANT">Plant </string>
+	<string name="SERVICEPRO_LBLSTRLOC">Store Loc </string>
+	<string name="SERVICEPRO_LBLSTO">STO# </string>
+	<string name="SERVICEPRO_LBLORD">Ordered </string>
+	<string name="SERVICEPRO_LBLRESISSD">Recv/Issd </string>
+	<string name="SERVICEPRO_LBLPLANTSTRLOC">Plant and Str Location  </string>
+	<string name="SERVICEPRO_LBLMATID">Material Id  </string>
+	<string name="SERVICEPRO_LBLQTY">Qty  </string>
+	<string name="SERVICEPRO_LBLUNIT">Unit  </string>
+	<string name="SERVICEPRO_LBLREQDATE">Req By Date  </string>
+	<string name="SERVICEPRO_LBLCREORD">Create Order</string>
+	<string name="SERVICEPRO_COLLTASKEMPTY"> No Tasks for </string>
+	 
+	<string name="SERVICEPRO_LBLDOC">Doc# </string> 
+	<string name="SERVICEPRO_LBLITEM">Item# </string> 
+	<string name="SERVICEPRO_PREVBUTTON">Prev </string> 
+	<string name="SERVICEPRO_NEXTBUTTON">Next </string>
+	<string name="SERVICEPRO_FIELDNOTES">Field Notes </string>  
+		
+	<string name="SERVICEPRO_ATTACHTITLE">Service Attachments </string>  
+	<string name="SERVICEPRO_VIEWATTACHTITLE">View Attachment </string>  
+	
+</resources>

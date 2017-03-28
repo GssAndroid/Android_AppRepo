@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="fill_parent">
+    
+<LinearLayout 
+    android:orientation="horizontal" android:id="@+id/phone_head_linear4" 
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+	<TextView  
+	    android:layout_height="wrap_content"  style="@style/appLabel" 
+	    android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="@string/SERVICEPRO_LBLFROM"/>
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right|center_vertical">
+		<TextView 
+			android:id="@+id/start_date"
+			android:text="@string/SERVICEPRO_RPMNSCR_LBLDATE" 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"  />
+	    <TextView 
+			android:id="@+id/start_time"
+			android:text="@string/SERVICEPRO_LBLTIME" 
+			android:layout_marginLeft="5dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content" />		       
+	</LinearLayout>		
+</LinearLayout>
+
+<LinearLayout 
+    android:orientation="horizontal" android:layout_below="@+id/phone_head_linear4" android:id="@+id/phone_head_linear5" 
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+	<TextView  
+	    android:layout_height="wrap_content"  style="@style/appLabel" 
+	    android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="To "/>
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right|center_vertical">
+		<TextView 
+			android:id="@+id/end_date"
+			android:text="@string/SERVICEPRO_RPMNSCR_LBLDATE" 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"  />
+	    <TextView 
+			android:id="@+id/end_time"
+			android:text="@string/SERVICEPRO_LBLTIME" 
+			android:layout_marginLeft="5dip"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content" />		       
+	</LinearLayout>		
+</LinearLayout>
+
+			
+<LinearLayout 
+    android:orientation="horizontal" android:layout_below="@+id/phone_head_linear5" android:id="@+id/phone_head_linear1"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+	<TextView  
+	    android:layout_height="wrap_content" style="@style/appLabel" 
+	    android:text="@string/SERVICEPRO_LBLABSTYP" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1"  />
+	
+	<Spinner 
+		android:id="@+id/activity_sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical" android:layout_width="150dip" />
+</LinearLayout>
+
+<LinearLayout 
+    android:orientation="horizontal" android:layout_below="@+id/phone_head_linear1" android:id="@+id/phone_head_linear2"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+	<TextView  
+	    android:layout_height="wrap_content"  style="@style/appLabel"
+	    android:text="@string/SERVICEPRO_LBLREAMEAT" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1"  />
+	
+	<EditText 
+	    android:inputType="textCapSentences|textImeMultiLine|textAutoCorrect"
+		android:id="@+id/emailET"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" />
+</LinearLayout>
+
+<LinearLayout 
+    android:orientation="horizontal" android:layout_below="@+id/phone_head_linear2" android:id="@+id/phone_head_linear3"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+	<TextView  
+	    android:layout_height="wrap_content"  style="@style/appLabel"
+	    android:text="@string/SERVICEPRO_LBLNOTES" android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" />
+	
+	<EditText 
+	    android:inputType="textCapSentences|textAutoCorrect"
+		android:id="@+id/notesET"
+        android:layout_height="150dip"
+        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" />
+</LinearLayout>    
+		
+<RelativeLayout 
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+	android:id="@+id/showlinear" android:layout_alignParentBottom="true" android:layout_marginBottom="10dip">
+	<Button 
+		android:id="@+id/saveBtn"
+        android:text="@string/SERVICEPRO_LBLSUBMITBTN"
+        android:layout_marginLeft="10dip" android:background="@drawable/btn_blue1" style="@style/mainBtn"
+        android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentLeft="true"/>
+	
+	<Button 
+		android:id="@+id/cancelBtn"
+        android:text="@string/SERVICEPRO_CANCEL" android:background="@drawable/btn_blue1" style="@style/mainBtn"
+        android:layout_marginRight="10dip"
+        android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentRight="true"/>
+</RelativeLayout>    
+
+</RelativeLayout>

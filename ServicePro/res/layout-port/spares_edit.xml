@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginRight="5dip">
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_gravity="left|center_vertical" android:layout_width="140dp" android:text="@string/SERVICEORD_MATSCR_LBL_MATID"/>
+			<Spinner 
+				android:id="@+id/material_sp"
+				android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" 
+		        android:layout_width="wrap_content" android:layout_weight="1"/>
+			<TextView  
+				android:editable="false"
+				style="@style/appText"
+				android:padding="5dip" android:visibility="gone"
+				android:layout_weight="1" android:layout_gravity="right|center_vertical" 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/material_tv" >
+			</TextView>
+		</LinearLayout>					
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_width="120dp" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="@string/SERVICEORD_MATSCR_LBL_MATDESC"/>
+			<TextView  
+				android:editable="false"
+				style="@style/appText"
+				android:padding="5dip" android:visibility="gone"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/material_descTV" >
+			</TextView>
+			<EditText 
+				android:id="@+id/material_descET"
+				android:layout_height="100dip" android:visibility="gone"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay"/>
+		</LinearLayout>			
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel"  
+			    android:layout_width="120dp" android:layout_gravity="left|center_vertical" android:text="@string/SERVICEORD_MATSCR_LBL_QTY" android:layout_weight="1"/>
+			<EditText 
+				android:id="@+id/qty"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:numeric="integer|decimal" android:inputType="number"/>
+		</LinearLayout>
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_gravity="left|center_vertical" android:layout_width="140dp" android:text="@string/SERVICEORD_MATSCR_LBL_UNIT"/>
+			<Spinner 
+				android:id="@+id/unit_sp"
+				android:layout_height="wrap_content" 
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" 
+		        android:layout_width="wrap_content" android:layout_weight="1"/>
+			<TextView  
+				android:editable="false"
+				style="@style/appText"
+				android:padding="5dip" android:visibility="gone"
+				android:layout_weight="1" android:layout_gravity="right|center_vertical" 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/unit_tv" >
+			</TextView>			    			
+		</LinearLayout>
+		<LinearLayout 
+		    android:orientation="horizontal" android:id="@+id/other_unitll" android:visibility="gone"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel"  
+			    android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="@string/SERVICEORD_MATSCR_LBL_OTHUNIT"/>
+			<TextView  
+				android:editable="false"
+				style="@style/appText"
+				android:padding="5dip" android:visibility="gone"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/other_unitTV" >
+			</TextView>
+			<EditText 
+				android:id="@+id/other_unitET" android:visibility="gone"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="@string/SERVICEORD_MATSCR_LBL_SERL"/>
+			<ImageButton 
+				android:id="@+id/barcodeBtn"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content" android:layout_gravity="center_vertical" android:background="@drawable/barcode_reader_icon" android:layout_marginRight="5dip"/>
+			<EditText 
+				android:id="@+id/serial"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip"/>
+		</LinearLayout>
+		<Button 
+			android:id="@+id/done_bt" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	        android:text="@string/SERVICEORD_FLTSCR_OK"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="20dip" android:layout_marginBottom="10dip" />
+	</LinearLayout>
+</ScrollView>

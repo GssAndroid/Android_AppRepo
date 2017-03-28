@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView 
+		android:layout_width="wrap_content" 
+		android:id="@+id/info" 
+		android:layout_height="wrap_content" 
+		android:src="@drawable/info" 
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true" android:layout_marginRight="10dip" android:layout_marginTop="10dip">
+	</ImageView>
+	<RelativeLayout 
+	    android:layout_centerInParent="true" 
+	    android:layout_height="wrap_content" android:layout_width="wrap_content">
+		<LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/mainbtnlayout1">				
+			<Button
+				android:id="@+id/taskbtn" android:background="@drawable/main_serviceorder" style="@style/mainImgBtnStyle" 
+				android:layout_marginRight="10dp" />			
+			<Button
+				android:id="@+id/reportbtn" android:background="@drawable/main_comptasks" style="@style/mainImgBtnStyle" android:layout_marginLeft="10dp"/>	
+		</LinearLayout>  	
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/mainbtnlayout2"
+			android:layout_below="@+id/mainbtnlayout1"
+			android:paddingTop="20dip" >			
+			<Button
+				android:id="@+id/vanstockbtn" android:background="@drawable/main_vanstock" style="@style/mainImgBtnStyle" 
+				android:layout_marginRight="10dp" />			
+			<Button
+				android:id="@+id/leavebtn" android:background="@drawable/main_leavemgmt" style="@style/mainImgBtnStyle" android:layout_marginLeft="10dp"/>	
+		</LinearLayout> 
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/mainbtnlayout2"
+			android:id="@+id/mainbtnlayout3"
+			android:paddingTop="20dp" >				
+			<Button
+				android:id="@+id/myutilizationbtn" android:background="@drawable/main_myutilization" style="@style/mainImgBtnStyle" 
+				android:layout_marginRight="10dp" />			
+			<Button
+				android:id="@+id/billablebtn" android:background="@drawable/main_billable" style="@style/mainImgBtnStyle" android:layout_marginLeft="10dp"/>	
+		</LinearLayout>  
+	</RelativeLayout>	
+</RelativeLayout>

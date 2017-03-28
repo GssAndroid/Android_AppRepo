@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+	android:layout_height="fill_parent">
+
+<LinearLayout 
+	android:orientation="vertical"
+	android:layout_margin="2dip"
+	android:id="@+id/vanstk_srlheader_linear"
+	android:background="@layout/border_black"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+	<ScrollView 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="70dip" android:fadeScrollbars="false" android:fadingEdge="none">
+		<LinearLayout 
+			android:orientation="vertical"
+			android:background="@color/darkbluecolor"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dip">
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel" 
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_VANSTOCK_MATRL"/>
+				<TextView  
+				android:layout_height="wrap_content" 
+				android:id="@+id/matterialTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip">
+				<TextView  
+				android:layout_height="wrap_content" style="@style/appLabel" 
+				android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_VANSTOCK_BATCH"/>
+				<TextView  
+				android:layout_height="wrap_content" 
+				android:id="@+id/batchTV" style="@style/appText"
+				android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" 
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_VANSTOCK_MATDESC"/>
+				<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/mattdescTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout>  
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" 
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_VANSTOCK_STRLOC"/>
+				<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/strlocTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+			
+			<LinearLayout 
+				android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginLeft="5dip" android:layout_marginBottom="5dip">
+				<TextView  
+					android:layout_height="wrap_content" style="@style/appLabel" 
+					android:layout_width="wrap_content" android:layout_gravity="left" android:text="@string/SERVICEPRO_VANSTOCK_PLANT"/>
+				<TextView  
+					android:layout_height="wrap_content" 
+					android:id="@+id/plantTV" style="@style/appText"
+					android:layout_width="wrap_content" android:layout_gravity="left" />
+			</LinearLayout> 
+		</LinearLayout> 
+	</ScrollView>
+</LinearLayout>
+
+
+<HorizontalScrollView android:id="@+id/HorizontalScrollView21"
+			android:layout_below="@+id/vanstk_srlheader_linear"
+            android:layout_width="wrap_content"         
+            android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:layout_weight="1"
+		android:layout_height="match_parent"> 
+		<TableLayout android:layout_height="wrap_content" 
+			android:layout_width="match_parent" android:id="@+id/vstcksrltbllayout1">
+			<TableRow style="@style/HeaderRow">
+		        <TextView
+		         	style="@style/HeaderText"
+     	 			android:id="@+id/EquipTV"
+           			android:text="@string/SERVICEPRO_VANSTOCK_SRL_EQUIP"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "130dip"
+		         />
+		         <TextView
+		         	style="@style/HeaderText"
+					android:id="@+id/serialNoTV"
+	    			android:text="@string/SERVICEPRO_VANSTOCK_SRL_SRLNOS"
+		            android:textStyle="bold"
+		            android:editable="false"
+		            android:clickable="true"
+		            android:layout_width = "300dip"
+		         />
+		    </TableRow>
+		</TableLayout>
+		
+		<ScrollView android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/vstcksrltbllayout2">
+			</TableLayout>
+		</ScrollView>
+	</LinearLayout>
+</HorizontalScrollView>
+
+</RelativeLayout>

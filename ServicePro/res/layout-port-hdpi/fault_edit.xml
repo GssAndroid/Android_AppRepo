@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/bgcolor"
+    android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginRight="5dip">
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_gravity="left|center_vertical" android:layout_width="120dip" android:text="@string/SERVICEORD_FLTSCR_SYMGRP"/>
+			<Spinner 
+				android:id="@+id/symptom_grp_sp"
+				android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content" android:layout_weight="1"/>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_gravity="left|center_vertical" android:layout_width="120dip" android:text="@string/SERVICEORD_FLTSCR_SYMCD"/>
+			<Spinner 
+				android:id="@+id/symptom_code_sp"
+				android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content" android:layout_weight="1"/>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel"  
+			    android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="@string/SERVICEORD_FLTSCR_SYMDESC"/>
+			<EditText 
+				android:id="@+id/symptom_desc"
+				android:layout_height="100dip"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay"/>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel"  
+			    android:layout_gravity="left|center_vertical" android:layout_width="120dip" android:text="@string/SERVICEORD_FLTSCR_PRBGRP"/>
+			<Spinner 
+				android:id="@+id/problem_grp_sp"
+				android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content" android:layout_weight="1"/>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel"  
+			    android:layout_gravity="left|center_vertical" android:layout_width="120dip" android:text="@string/SERVICEORD_FLTSCR_PRBCD"/>
+			<Spinner 
+				android:id="@+id/problem_code_sp"
+				android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content" android:layout_weight="1"/>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="@string/SERVICEORD_FLTSCR_PROBDESC"/>
+			<EditText 
+				android:id="@+id/problem_desc"
+		        android:layout_height="100dip"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay"/>
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content"  style="@style/appLabel" 
+			    android:layout_gravity="left|center_vertical" android:layout_width="120dip" android:text="@string/SERVICEORD_FLTSCR_CAUSGRP"/>
+			<Spinner 
+				android:id="@+id/cause_grp_sp"
+				android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content" android:layout_weight="1"/>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel"  
+			    android:layout_gravity="left|center_vertical" android:layout_width="120dip" android:text="@string/SERVICEORD_FLTSCR_CAUSCD"/>
+			<Spinner 
+				android:id="@+id/cause_code_sp"
+				android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content" android:layout_weight="1"/>
+		</LinearLayout>		
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView  
+			    android:layout_height="wrap_content" style="@style/appLabel"  
+			    android:layout_width="wrap_content" android:layout_gravity="left|center_vertical" android:layout_weight="1" android:text="@string/SERVICEORD_FLTSCR_CAUSDESC"/>
+			<EditText 
+				android:id="@+id/cause_desc"
+		        android:layout_height="100dip"
+		        android:layout_gravity="right|center_vertical" android:layout_width="150dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay"/>
+		</LinearLayout>
+		<Button 
+			android:id="@+id/done_bt" android:background="@drawable/btn_blue1" style="@style/mainBtn" 
+	        android:text="@string/SERVICEORD_FLTSCR_OK"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="20dip" android:layout_marginBottom="10dip" />
+	</LinearLayout>
+</ScrollView>
